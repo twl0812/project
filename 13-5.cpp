@@ -11,13 +11,13 @@ int main()
     vector<string> arr2;
     string s;
     bool check= true;
-    while(getline(is,s))
+    while(getline(is,s)) //파일끝까지
     {
-        arr.push_back(s);
+        arr.push_back(s); //백터에 넣어줌
     }
     while(getline(is2,s))
     {
-        arr2.push_back(s);
+        arr2.push_back(s); //벡터에넣어줌
     }
     for(int i=0;i<arr.size();i++)
     {

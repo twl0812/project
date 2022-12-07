@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     srand(time(NULL));
-    set<int> num;
+    set<int> num; //중복x
     while(num.size()!=6)
     {
         int r=rand()%45;

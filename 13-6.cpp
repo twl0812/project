@@ -12,7 +12,7 @@ int main()
         char c;
         is.get(c);
         if(is.eof()) break;
-        if(c>='D' && c<='Z')
+        if(c>='D' && c<='Z') //알파벳 변경
         {
             s+=c-'D'+'a';
         }

@@ -8,7 +8,7 @@ private:
     int minutes;
 public:
     Time() : hours(0), minutes (0) { }
-    Time(int h, int m) : hours{h}, minutes{m} { }
+    Time(int h, int m) : hours(h), minutes(m) { }
     Time & operator++(int) //++조건을만듬
     {
         if(minutes==59) 
@@ -41,5 +41,4 @@ int main()
     t.displayTime();
     t++;
     t.displayTime();
-    t++;
 }

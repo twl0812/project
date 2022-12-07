@@ -4,13 +4,13 @@
 using namespace std;
 int main()
 {
-    ifstream is("sample.txt");
+    ifstream is("sample.txt"); //read
     int sum=0;
     while(1)
     {
         char a=0;
         is.get(a);
-        if(is.eof())
+        if(is.eof()) //이런식으로 안해주면 한번더 더함
         {
             break;
         }
@@ -20,5 +20,5 @@ int main()
         }
 
     }
-    cout<<sum;
+    cout<<sum<<endl;
 }

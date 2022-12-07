@@ -16,7 +16,8 @@ class Student{
     string tel;
 public:
     Student(string n="",string a="",int i=0,string t=""):name(n),address(a),id(i),tel(t){}
-    void setn(string n)
+    //설정자
+    void setn(string n) 
     {
         name=n;
     }
@@ -32,6 +33,7 @@ public:
     {
         tel=t;
     }
+    //접근자
     string getn()
     {
         return name;
@@ -58,7 +60,7 @@ public:
 };
 int main()
 {
-    map<string,Student> info;
+    map<string,Student> info; //map을 이용
     while(1)
     {
         cout<<"추가 : 1, 검색: 2,삭제: 3, 모두보기: 4,종료: 5"<<endl;

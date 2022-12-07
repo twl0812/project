@@ -11,7 +11,7 @@
 using namespace std;
 int main()
 {
-    vector<int> arr;
+    vector<int> arr; //vector use
     int a;
     while(1)
     {
@@ -24,7 +24,7 @@ int main()
 //    {
 //        sum+=i;
 //    }
-for(auto i=arr.begin();i<arr.end();i++)
+for(auto i=arr.begin();i<arr.end();i++) //iterator
     {
         sum+=*i;
     }

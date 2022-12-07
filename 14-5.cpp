@@ -3,8 +3,8 @@
 #include <fstream>
 #include <vector>
 using namespace std;
-template <typename T>
-double getAverage(T arr[],int num)
+template <typename T> //template
+double getAverage(T arr[],int num) //average=double
 {
     T sum=0;
     double average=0;

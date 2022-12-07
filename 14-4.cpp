@@ -3,7 +3,7 @@
 #include <fstream>
 #include <vector>
 using namespace std;
-template <typename T>
+template <typename T> //template
 T getSmallest(T arr[],int num)
 {
     T min=arr[0];

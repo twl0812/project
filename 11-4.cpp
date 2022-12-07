@@ -59,7 +59,7 @@ public:
 };
 int main()
 {
-    Customer m("엄준식","신안시","010-4444-4444",1,1000);
+    Customer m("이이이","인천광역시","010-4444-4444",1,1000);
     cout<<m.getn()<<endl;
     cout<<m.geta()<<endl;
     cout<<m.gett()<<endl;

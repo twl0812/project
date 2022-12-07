@@ -31,26 +31,26 @@ int main()
         }
         if(x==2){
             int cnt=0;
-            vector<string> arr;
-            vector<string> ans;
+            vector<string> arr; //문제부분정의
+            vector<string> ans; // 객관식 보기 정의
             for(auto i=dic.begin();i!=dic.end();i++)
             {
                 arr.push_back(i->first);
                 ans.push_back(i->second);
             }
-                int r=rand()%(arr.size());
+                int r=rand()%(arr.size()); //문제 랜덤발생
                 cout<<arr[r]<<"의 의미? ";
-                string pick=dic[arr[r]];
-                ans.push_back(pick);
+                string pick=dic[arr[r]]; //정답부분
+                ans.push_back(pick); 
                 string temp=ans[0];
-                ans[0]=ans[ans.size()-1];
+                ans[0]=ans[ans.size()-1]; //자리를 바꿔주어 첫번쨰 인덱스가 정답
                 ans[ans.size()-1]=temp;
-            sort(ans.begin(), ans.begin()+3);
+            sort(ans.begin(), ans.begin()+3); //보기부분 4개를 정렬함
             for(int i=0;i<3;i++)
             {
-                if(ans[i]==ans[i+1])
+                if(ans[i]==ans[i+1]) //정렬을 했으니 같은게 2개생길수 있으므로 바꿔줌
                 {
-                    ans[i]=*(ans.end()-1);
+                    ans[i]=*(ans.end()-1); 
                 }
             }
                 for(int i=0;i<4;i++)

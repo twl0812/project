@@ -17,7 +17,8 @@ int main()
     year.push_back(2013);
     year.push_back(2014);
 
-    auto it=find_if(year.begin(), year.end(),[](int x){return x%4==0;});
+    auto it = find_if(year.begin(), year.end(),[](int x){return x%4==0;}); 
+    //람다식 [](type){code..}
      cout<<*it<<" ";
 
 }

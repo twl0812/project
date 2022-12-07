@@ -3,7 +3,7 @@
 #include <fstream>
 #include <vector>
 using namespace std;
-template<typename T>
+template<typename T> //template
 bool isEqual(T arr[],T arr2[],int num)
 {
     bool check= true;

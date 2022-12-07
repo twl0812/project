@@ -25,7 +25,7 @@ public:
 int main()
 {
   Box a(10,10,10),b(20,20,20),c;
-  c=a+b;
+  c=a+a+b;
   a.show();
   b.show();
   c.show();

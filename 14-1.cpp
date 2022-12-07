@@ -12,7 +12,7 @@ int main()
         if(num<=0) throw -999;
         cout<<num;
     }
-    catch(int num)
+    catch(int num) //throw한 것을 받아옴
     {
         cout<<"오류: 양수를 입력해야함"<<endl;
     }
